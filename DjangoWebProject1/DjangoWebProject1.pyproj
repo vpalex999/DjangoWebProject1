@@ -6,6 +6,7 @@
     <RootNamespace>DjangoWebProject1</RootNamespace>
     <InterpreterId>{01c53d1d-89a1-4d3c-a534-05bd10ae337b}</InterpreterId>
     <InterpreterVersion>3.4</InterpreterVersion>
+    <WebBrowserPort>8000</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
