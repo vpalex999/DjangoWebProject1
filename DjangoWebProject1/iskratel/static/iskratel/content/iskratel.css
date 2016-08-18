@@ -1,0 +1,92 @@
+.header {
+    background-color: #fbfbfb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header .container {
+    height: 50px;
+}
+
+.jumbotron {
+    position: inherit;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background-color: #B0C4DE;
+    overflow: auto;
+}
+
+.jumbotron .row {
+    margin: 0px;
+}
+
+.jumbotron .row .col-md-2 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.jumbotron .row .col-md-10 .container {
+    width: 100%
+}
+
+.jumbotron .container {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.jumbotron .container a {
+    color: #000;
+}
+
+.jumbotron .container .nav ul {
+    margin-top: 2px;
+}
+
+.jumbotron .container #navigation li .panactive,
+.jumbotron .container #navigation1 li .panactive {
+    background-color: #0066FF;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.jumbotron .container #navigation a:hover,
+.jumbotron .container #navigation1 a:hover {
+    background-color: #6699FF;
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.jumbotron #navigation > li .pane,
+.jumbotron #navigation1 > li .pane {
+    min-height: 40px;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+}
+
+
+/* скрывает побменю */
+
+.submenu {
+    display: none;
+}
+
+.footer {
+    background-color: #573D7D;
+}
+
+.footer .container {
+    height: 50px;
+}

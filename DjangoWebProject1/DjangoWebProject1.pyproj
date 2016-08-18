@@ -44,6 +44,16 @@
     <Compile Include="callerid\urls.py" />
     <Compile Include="callerid\views.py" />
     <Compile Include="callerid\__init__.py" />
+    <Compile Include="iskratel\admin.py" />
+    <Compile Include="iskratel\apps.py" />
+    <Compile Include="iskratel\migrations\__init__.py" />
+    <Compile Include="iskratel\models.py" />
+    <Compile Include="iskratel\tests.py" />
+    <Compile Include="iskratel\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iskratel\views.py" />
+    <Compile Include="iskratel\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="DjangoWebProject1\__init__.py" />
     <Compile Include="DjangoWebProject1\settings.py" />
@@ -74,6 +84,14 @@
     <Folder Include="DjangoWebProject1\static\content\" />
     <Folder Include="DjangoWebProject1\static\fonts\" />
     <Folder Include="DjangoWebProject1\static\scripts\" />
+    <Folder Include="iskratel\" />
+    <Folder Include="iskratel\migrations\" />
+    <Folder Include="iskratel\static\" />
+    <Folder Include="iskratel\static\iskratel\" />
+    <Folder Include="iskratel\static\iskratel\content\" />
+    <Folder Include="iskratel\static\iskratel\fonts\" />
+    <Folder Include="iskratel\static\iskratel\scripts\" />
+    <Folder Include="iskratel\templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="callerid\static\callerid\content\bootstrap.css" />
@@ -84,6 +102,12 @@
     <Content Include="callerid\static\callerid\scripts\jquery-2.2.0.js" />
     <Content Include="callerid\templates\callerid\callerid.html" />
     <Content Include="callerid\templates\callerid\index.html.orig" />
+    <Content Include="iskratel\static\iskratel\content\bootstrap.css" />
+    <Content Include="iskratel\static\iskratel\content\iskratel.css" />
+    <Content Include="iskratel\static\iskratel\scripts\bootstrap.js" />
+    <Content Include="iskratel\static\iskratel\scripts\jquery-2.2.0.js" />
+    <Content Include="iskratel\static\iskratel\scripts\iskratel.js" />
+    <Content Include="iskratel\templates\iskratel.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />

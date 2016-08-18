@@ -48,4 +48,5 @@ urlpatterns = [
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     url(r'^callerid/', include('callerid.urls')),
+    url(r'^iskratel/', include('iskratel.urls')),
 ]
