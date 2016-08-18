@@ -70,6 +70,10 @@
     <Folder Include="callerid\templates\" />
     <Folder Include="callerid\templates\callerid\" />
     <Folder Include="DjangoWebProject1\" />
+    <Folder Include="DjangoWebProject1\static\" />
+    <Folder Include="DjangoWebProject1\static\content\" />
+    <Folder Include="DjangoWebProject1\static\fonts\" />
+    <Folder Include="DjangoWebProject1\static\scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="callerid\static\callerid\content\bootstrap.css" />
@@ -110,6 +114,12 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="DjangoWebProject1\static\content\bootstrap.css" />
+    <Content Include="DjangoWebProject1\static\content\callerid_style.css" />
+    <Content Include="DjangoWebProject1\static\fonts\CallerID_pcap.png" />
+    <Content Include="DjangoWebProject1\static\scripts\bootstrap.js" />
+    <Content Include="DjangoWebProject1\static\scripts\callerid.js" />
+    <Content Include="DjangoWebProject1\static\scripts\jquery-2.2.0.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.mht">

@@ -5,6 +5,9 @@ Definition of urls for DjangoWebProject1.
 from datetime import datetime
 from django.conf.urls import url
 import django.contrib.auth.views
+from django.conf.urls.static import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf import settings
 
 import app.forms
 import app.views
