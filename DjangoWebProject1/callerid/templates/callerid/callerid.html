@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Дешифровка CallerID в протоколе MEGACO & H248</title>
+  <!-- Bootstrap -->
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'callerid/content/bootstrap.css' %}" >
+  <link rel="stylesheet" href="{% static 'callerid/content/callerid_style.css' %}">
+  <script src="{% static 'callerid/scripts/jquery-2.2.0.js' %}"></script>
+  <script src="{% static 'callerid/scripts/bootstrap.js' %}"></script>
+  <script src="{% static 'callerid/scripts/callerid.js' %}" ></script>
+
+</head>
+<body>
+  <div class="navbar  navbar-inverse navbar-fixed-top" role="navigation" >
+    <div class="container">
+      <div class="navbar-header">
+        <div class="navbar-brand"><p>CallerId (АОН) & MEGACO(H248) Дешифровка номера</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron">
+    <div class="container">
+      <form class="form-horizontal" role="form" id="formCallerId">
+        <div class="form-group">
+          <label for="inputCallerId" class="col-sm-2 control-label" >CallerId</label>
+          <div class="col-sm-10">
+           <input type="text" class="form-control" id="inputCallerId" >
+         </div>
+       </div>
+       <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <table class="table table-condensed ">
+           <tr>
+             <th>Месяц</th>
+             <th>День</th>
+             <th>Часы</th>
+             <th>Минуты</th>
+             <th>Номер</th>
+             <th>Имя</th>
+           </tr>
+           <tr>
+             <td id="month_td"></td>
+             <td id="day_td"></td>
+             <td id="hour_td"></td>
+             <td id="minute_td"></td>
+             <td id="number_td"></td>
+             <td id="name_td"></td>
+           </tr>
+         </table>
+       </div>
+     </div>
+     <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" id="buttonrun" class="btn btn-primary" value="run">Дешифровать</button>
+        <button type="submit" id="buttonreset" class="btn btn-warning" value="reset">Сброс</button>
+        <button type="submit" id="buttontest" class="btn btn-success" value="test">Тест</button>
+        <button type="submit" id="buttoninfo" class="btn btn-info" value="help"
+                data-toggle="modal" data-target="#ModalHelp">Помощь</button>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <textarea class="form-control" rows="8"  id="inputDecode" placeholder="Детализация"></textarea>
+        <button type="submit" id="buttonDecode" class="btn btn-primary">Открыть детализацию</button>
+      </div>
+    </div>   
+    
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id='ModalHelp'>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <p>Для поиска CallerID в протоколе MEGACO&H248 используйте фильтр в Wireshark:</p>
+      <p>Filter: <b>megaco.pkgdname == "andisp/dwa"</b></p>
+      <p>Далее копируете значения поля <em>ddb</em>=<b>040E31323234313435373631313230302A</b></p>
+      <p>в строку ввода <b>CallerId</b> и нажмите кнопку <b>Дешифровать</b></p>
+      <img src="CallerID_pcap.png" alt="" width="100%">
+
+    </div>
+  </div>
+</div>
+
+</form>
+
+</div>    
+</div>  
+</body>
+</html>
