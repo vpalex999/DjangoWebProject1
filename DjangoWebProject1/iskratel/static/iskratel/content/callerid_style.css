@@ -1,0 +1,14 @@
+.jumbotron{
+	margin-top: 20px;
+}
+/*.container	{
+	width: 70px;
+}*/
+
+.navbar-brand {
+	font-weight: bold;
+}
+
+#buttonDecode{
+	margin-top: 15px;
+}

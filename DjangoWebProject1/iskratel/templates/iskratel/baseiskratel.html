@@ -2,9 +2,9 @@
 <html>
 
 <head>
+    {% load staticfiles %}
     <title>SI3000</title>
-    <meta charset="utf-8">
-    {% load staticfile %}
+    <meta charset="utf-8">  
     <link rel="stylesheet" type="text/css" href="{% static 'iskratel/content/bootstrap.css'%}">
     <link rel="stylesheet" type="text/css" href="{% static 'iskratel/content/iskratel.css' %}">
     <script src="{% static 'iskratel/scripts/jquery-2.2.0.js' %}"></script>
@@ -117,7 +117,10 @@
             </div>
             <div class="col-md-10">
                 <div class="container">
-                    <p>Hello! </p>
+                    <div id="content">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
                 </div>
                 <!-- end container-right -->
             </div>

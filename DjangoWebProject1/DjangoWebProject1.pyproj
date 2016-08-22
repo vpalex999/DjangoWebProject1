@@ -92,6 +92,7 @@
     <Folder Include="iskratel\static\iskratel\fonts\" />
     <Folder Include="iskratel\static\iskratel\scripts\" />
     <Folder Include="iskratel\templates\" />
+    <Folder Include="iskratel\templates\iskratel\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="callerid\static\callerid\content\bootstrap.css" />
@@ -103,12 +104,17 @@
     <Content Include="callerid\templates\callerid\callerid.html" />
     <Content Include="callerid\templates\callerid\index.html.orig" />
     <Content Include="iskratel\static\iskratel\content\bootstrap.css" />
+    <Content Include="iskratel\static\iskratel\content\callerid_style.css" />
     <Content Include="iskratel\static\iskratel\content\iskratel.css" />
+    <Content Include="iskratel\static\iskratel\fonts\CallerID_pcap.png" />
     <Content Include="iskratel\static\iskratel\scripts\bootstrap.js" />
+    <Content Include="iskratel\static\iskratel\scripts\callerid.js" />
     <Content Include="iskratel\static\iskratel\scripts\jquery-2.2.0.js" />
     <Content Include="iskratel\static\iskratel\scripts\iskratel.js" />
     <Content Include="iskratel\static\iskratel\scripts\nav2.2.js" />
-    <Content Include="iskratel\templates\iskratel.html" />
+    <Content Include="iskratel\templates\iskratel\callerid.html" />
+    <Content Include="iskratel\templates\iskratel\iskratel.html" />
+    <Content Include="iskratel\templates\iskratel\baseiskratel.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />

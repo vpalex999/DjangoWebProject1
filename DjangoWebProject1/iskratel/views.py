@@ -6,4 +6,7 @@ from django.views.generic.base import TemplateView
 
 class IskratelView(TemplateView):
     template_name = "iskratel/iskratel.html"
+
+class CallerID(TemplateView):
+    template_name ="iskratel/callerid.html"
 # Create your views here.
