@@ -107,6 +107,7 @@
     <Content Include="iskratel\static\iskratel\scripts\bootstrap.js" />
     <Content Include="iskratel\static\iskratel\scripts\jquery-2.2.0.js" />
     <Content Include="iskratel\static\iskratel\scripts\iskratel.js" />
+    <Content Include="iskratel\static\iskratel\scripts\nav2.2.js" />
     <Content Include="iskratel\templates\iskratel.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
