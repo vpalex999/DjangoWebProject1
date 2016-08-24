@@ -1,14 +1,32 @@
-.jumbotron{
-	margin-top: 20px;
-}
-/*.container	{
-	width: 70px;
-}*/
+#calleridnavbar {
+    position: relative;
+    border-radius: 10px;
 
-.navbar-brand {
-	font-weight: bold;
 }
 
-#buttonDecode{
-	margin-top: 15px;
+#content > .container {
+    min-height: 10px;
+    background-color: #333;
+}
+
+#calleridnavbar .navbar-inverse{
+    background-color: #222;
+    border-color: #080808;
+}
+#calleridnavbar .navbar-header {
+    float: none;
+    
+}
+
+
+
+#calleridnavbar .navbar-brand {
+    font-weight: bold;
+    float: none;
+    text-align: center;
+    
+}
+
+#buttonDecode {
+    margin-top: 15px;
 }
