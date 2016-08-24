@@ -31,8 +31,10 @@
 }
 
 .jumbotron .row .col-md-10 .container {
-    width: 100%
+    width: 100%;
+
 }
+
 
 .jumbotron .container {
     position: relative;
