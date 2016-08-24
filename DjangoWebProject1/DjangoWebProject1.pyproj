@@ -8,6 +8,7 @@
     <InterpreterVersion>3.5</InterpreterVersion>
     <WebBrowserPort>8000</WebBrowserPort>
     <IsWindowsApplication>False</IsWindowsApplication>
+    <WebBrowserUrl>iskratel/</WebBrowserUrl>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
