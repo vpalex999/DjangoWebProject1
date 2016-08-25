@@ -5,6 +5,7 @@
     left: 0;
     width: 100%;
     z-index: 999;
+    
 }
 
 .header .container {
@@ -13,16 +14,16 @@
 
 .jumbotron {
     position: inherit;
-    margin-top: 40px;
-    margin-bottom: 0px;
-    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding-top: 10px;
     padding-bottom: 15px;
     background-color: #B0C4DE;
     overflow: auto;
 }
 
 .jumbotron .row {
-    margin: 0px;
+    margin: 40px 0px 0px 0px;
 }
 
 .jumbotron .row .col-md-2 {

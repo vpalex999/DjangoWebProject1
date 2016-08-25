@@ -1,34 +1,25 @@
-﻿<!DOCTYPE html>
-<html lang="ru">
-<head>
-    {% load staticfiles %}
-    <meta charset="utf-8">  
-    <title>SI3000</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'iskratel/content/bootstrap.css'%}">
-    <link rel="stylesheet" type="text/css" href="{% static 'iskratel/content/iskratel.css' %}">
-    <script src="{% static 'iskratel/scripts/jquery-2.2.0.js' %}"></script>
-    <script src="{% static 'iskratel/scripts/nav2.2.js' %}"></script>
-    <script src="{% static 'iskratel/scripts/bootstrap.js' %}"></script>
-    <script src="{% static 'iskratel/scripts/iskratel.js' %}"></script>
-</head>
-
-<body>
-    {% block header %}
+﻿{% extends "iskratel/baseiskratel.html" %}
+{% block header %}
     <div class="header">
         <div class="container">
             <ul id="mytab" class="nav nav-tabs navbar-fixed-top" role="tablist">
-                <li class="active" role="presentation"><a href="#si3000_v6" role="tab" data-toggle="tab">SI3000 V6</a></li>
+                <li role="presentation"><a href="#si3000_v6" role="tab" data-toggle="tab">SI3000 V6</a></li>
                 <li role="presentation"><a href="#si3000_v5" role="tab" data-toggle="tab">SI3000 V5</a></li>
                 <li role="presentation"><a href="#si3000_mn" role="tab" data-toggle="tab">SI3000 MN</a></li>
-                <li role="presentation"><a href="#utility" role="tab" data-toggle="tab">Утилиты</a></li>
+                <li class="active" role="presentation"><a href="utility.html" role="tab" data-toggle="tab">Утилиты</a></li>
             </ul>
         </div>
       </div>
-    {% endblock %}
+{% endblock %}
+{% block jumbotron %}
     <div class="jumbotron">
         <div class="row">
-            <div class="col-md-2">
-                <div class="container">
+         <div class="col-md-2">
+            <div class="container">
+            {% block leftmenu %}
+            <!--
+            
+                
                     <div class="tab-content">
                         <div role="tabpanel" id="si3000_v6" class="tab-pane active">
                             <ul class="nav of nav-stacked" id="navigation1">
@@ -82,7 +73,9 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
+                        
+                        <!-- 
                         <div role="tabpanel" id="utility" class="tab-pane">
                             <ul class="nav of nav-stacked">
                                 <li><a class="pane" href="callerid.html">Дешифратор CallerID в протоколе MEGACO & H248</a></li>
@@ -112,23 +105,27 @@
                                 <li><a class="pane" href="#">25</a></li>
                             </ul>
                         </div>
+                           
                     </div>
                 </div>
                 <!-- end container-left -->
+           <!-- </div>  -->
+            {% endblock %}
             </div>
-            <div class="col-md-10">
-                <div class="container">
-                    <p>Hello! </p>
-                </div>
+            </div>
+            <div class="col-md-10">   
+                <div class="container">                
+                        {% block content %}
+                        {%endblock %}  
+                 </div>           
                 <!-- end container-right -->
             </div>
-
-        </div>
-    </div>
-    <!-- end jumbotron -->
+           
+        </div> <!-- end class row -->
+    </div> <!-- end class jumbotron -->  
+{% endblock %}
+{% block footer %}
     <div class="footer">
         <div class="container"></div>
     </div>
-</body>
-
-</html>
+{% endblock %}

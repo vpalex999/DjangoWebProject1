@@ -1,10 +1,9 @@
 ﻿<!DOCTYPE html>
-<html>
-
+<html lang="ru">
 <head>
     {% load staticfiles %}
-    <title>SI3000</title>
     <meta charset="utf-8">  
+    <title>SI3000</title>
     <link rel="stylesheet" type="text/css" href="{% static 'iskratel/content/bootstrap.css'%}">
     <link rel="stylesheet" type="text/css" href="{% static 'iskratel/content/iskratel.css' %}">
     <script src="{% static 'iskratel/scripts/jquery-2.2.0.js' %}"></script>
@@ -12,117 +11,12 @@
     <script src="{% static 'iskratel/scripts/bootstrap.js' %}"></script>
     <script src="{% static 'iskratel/scripts/iskratel.js' %}"></script>
 </head>
-
 <body>
     {% block header %}
     {% endblock %}
-    <div class="jumbotron">
-        <div class="row">
-            <div class="col-md-2">
-                <div class="container">
-                    <div class="tab-content">
-                        <div role="tabpanel" id="si3000_v6" class="tab-pane active">
-                            <ul class="nav of nav-stacked" id="navigation1">
-                                <li><a class="pane" href="callerid.html">Дешифратор CallerID в протоколе MEGACO & H248</a></li>
-                                <li><a class="pane" href="#">SI3000_v6</a></li>
-                                <li><a class="pane" href="#">3</a>
-                                    <div class="submenu">
-                                        <ul class="nav of nav-stacked">
-                                            <li><a class="pane" href="#">CCS</a></li>
-                                            <li><a class="pane" href="#">CS</a></li>
-                                            <li><a class="pane" href="#">MG</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div role="tabpanel" id="si3000_v5" class="tab-pane">
-                            <ul class="nav of nav-stacked">
-                                <li><a class="pane" href="callerid.html">Дешифратор CallerID в протоколе MEGACO & H248</a></li>
-                                <li><a class="pane" href="#">SI3000_v5</a></li>
-                                <li><a class="pane" href="#">3</a></li>
-                            </ul>
-                        </div>
-                        <div role="tabpanel" id="si3000_mn" class="tab-pane">
-                            <ul class="nav of nav-stacked" id="navigation">
-                                <li><a class="pane" href="#">MN_V5</a>
-                                    <ul class="nav of nav-stacked">
-                                        <li><a class="pane" href="#">Сбор информации с MNV5</a></li>
-                                        <li><a class="pane" href="#">Bacula</a></li>
-                                        <li><a class="pane" href="#">DNS</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="pane" href="#">MN_6031</a>
-                                    <ul class="nav of nav-stacked">
-                                        <li><a class="pane" href="#">Сбор информации с MN6031</a></li>
-                                        <li><a class="pane" href="#">Bacula</a></li>
-                                        <li><a class="pane" href="#">DNS</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="pane" href="#">MNS</a>
-                                    <ul class="nav of nav-stacked">
-                                        <li><a class="pane" href="#">Сбор информации с MNS</a></li>
-                                        <li><a class="pane" href="#">Bacula</a></li>
-                                        <li><a class="pane" href="#">SPAG</a></li>
-                                        <li><a class="pane" href="#">FMS</a></li>
-                                        <li><a class="pane" href="#">PQMP</a></li>
-                                        <li><a class="pane" href="#">DNS</a></li>
-                                        <li><a class="pane" href="#">NTP</a></li>
-                                        <li><a class="pane" href="#">DHCP</a></li>
-                                        <li><a class="pane" href="#">Миграция</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div role="tabpanel" id="utility" class="tab-pane">
-                            <ul class="nav of nav-stacked">
-                                <li><a class="pane" href="callerid.html">Дешифратор CallerID в протоколе MEGACO & H248</a></li>
-                                <li><a class="pane" href="#">2</a></li>
-                                <li><a class="pane" href="#">3</a></li>
-                                <li><a class="pane" href="#">4</a></li>
-                                <li><a class="pane" href="#">5</a></li>
-                                <li><a class="pane" href="#">6</a></li>
-                                <li><a class="pane" href="#">7</a></li>
-                                <li><a class="pane" href="#">8</a></li>
-                                <li><a class="pane" href="#">9</a></li>
-                                <li><a class="pane" href="#">10</a></li>
-                                <li><a class="pane" href="#">11</a></li>
-                                <li><a class="pane" href="#">12</a></li>
-                                <li><a class="pane" href="#">13</a></li>
-                                <li><a class="pane" href="#">14</a></li>
-                                <li><a class="pane" href="#">15</a></li>
-                                <li><a class="pane" href="#">16</a></li>
-                                <li><a class="pane" href="#">17</a></li>
-                                <li><a class="pane" href="#">18</a></li>
-                                <li><a class="pane" href="#">19</a></li>
-                                <li><a class="pane" href="#">20</a></li>
-                                <li><a class="pane" href="#">21</a></li>
-                                <li><a class="pane" href="#">22</a></li>
-                                <li><a class="pane" href="#">23</a></li>
-                                <li><a class="pane" href="#">24</a></li>
-                                <li><a class="pane" href="#">25</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- end container-left -->
-            </div>
-            <div class="col-md-10">
-                <div class="container">
-                    <div id="content">
-                        {% block content %}
-                        {% endblock %}
-                    </div>
-                </div>
-                <!-- end container-right -->
-            </div>
-
-        </div>
-    </div>
-    <!-- end jumbotron -->
-    <div class="footer">
-        <div class="container"></div>
-    </div>
+    {% block jumbotron %}
+    {% endblock %}
+    {% block footer %}
+    {% endblock %}
 </body>
-
 </html>

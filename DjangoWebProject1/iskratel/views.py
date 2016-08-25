@@ -9,4 +9,7 @@ class IskratelView(TemplateView):
 
 class CallerID(TemplateView):
     template_name ="iskratel/callerid.html"
+
+class Utility(TemplateView):
+    template_name ="iskratel/utility.html"
 # Create your views here.
