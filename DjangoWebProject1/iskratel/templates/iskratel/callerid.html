@@ -1,19 +1,17 @@
 ﻿{% extends "iskratel/baseiskratel.html" %}
 {% block content %}
-<head>
   {% load staticfiles %}
   <link rel="stylesheet" href="{% static 'iskratel/content/callerid_style.css' %}">
   <script src="{% static 'iskratel/scripts/callerid.js' %}" ></script>
-</head>
-<body>
-  {#<div class="navbar  navbar-inverse navbar-fixed-top" role="navigation" >
+  <div id="calleridnavbar">
+  <div class="navbar  navbar-inverse navbar-fixed-top" role="navigation" >
     <div class="container">
       <div class="navbar-header">
-        <div class="navbar-brand"><p>CallerId (АОН) & MEGACO(H248) Дешифровка номера</p></div>
+        <div  class="navbar-brand"><p>CallerId (АОН) & MEGACO(H248) Дешифровка номера</p></div>
       </div>
     </div>
-  </div>#}
-  <div class="jumbotron">
+  </div>
+  </div>
     <div class="container">
       <form class="form-horizontal" role="form" id="formCallerId">
         <div class="form-group">
@@ -68,7 +66,7 @@
       <p>Filter: <b>megaco.pkgdname == "andisp/dwa"</b></p>
       <p>Далее копируете значения поля <em>ddb</em>=<b>040E31323234313435373631313230302A</b></p>
       <p>в строку ввода <b>CallerId</b> и нажмите кнопку <b>Дешифровать</b></p>
-      <img src="{% static 'iskratel/fonts/CallerID_pcap.png' %}" alt=""  width="100">
+      <img src="{% static 'iskratel/fonts/CallerID_pcap.png' %}" alt=""  width="100%">
 
     </div>
   </div>
@@ -76,9 +74,7 @@
 
 </form>
 
-</div>    
-</div>  
-</body>
-</html>
+</div> 
+
 
 {% endblock %}

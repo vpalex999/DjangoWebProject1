@@ -9,5 +9,5 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.IskratelView.as_view(), name='iskratel'),
-    url(r'^callerid$',CallerID.as_view(), name='callerid'),
+    url(r'^callerid.html$',CallerID.as_view(), name='callerid'),
     ]

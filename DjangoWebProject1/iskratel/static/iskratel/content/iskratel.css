@@ -85,6 +85,10 @@
     display: none;
 }
 
+#content .container {
+    min-height: initial;
+}
+
 .footer {
     background-color: #573D7D;
 }

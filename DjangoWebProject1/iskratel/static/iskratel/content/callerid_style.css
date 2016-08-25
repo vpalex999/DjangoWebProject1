@@ -1,14 +1,23 @@
-.jumbotron{
-	margin-top: 20px;
+#calleridnavbar .navbar {
+    position: relative;
+    border-radius: 10px;
 }
-/*.container	{
-	width: 70px;
-}*/
-
-.navbar-brand {
-	font-weight: bold;
+.navbar-fixed-top{
+    z-index:0;
 }
-
-#buttonDecode{
-	margin-top: 15px;
+#calleridnavbar .container{
+    background-color: #333;
+     min-height: 0px;
+}
+#calleridnavbar .navbar-header {
+    float: none;
+}
+#calleridnavbar .navbar-brand {
+    font-weight: bold;
+    float: none;
+    text-align: center;
+    
+}
+#buttonDecode {
+    margin-top: 15px;
 }
