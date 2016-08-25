@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    {% block header %}
     <div class="header">
         <div class="container">
             <ul id="mytab" class="nav nav-tabs navbar-fixed-top" role="tablist">
@@ -22,7 +23,8 @@
                 <li role="presentation"><a href="#utility" role="tab" data-toggle="tab">Утилиты</a></li>
             </ul>
         </div>
-    </div>
+      </div>
+    {% endblock %}
     <div class="jumbotron">
         <div class="row">
             <div class="col-md-2">
