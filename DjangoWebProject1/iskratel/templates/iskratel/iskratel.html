@@ -6,7 +6,7 @@
                 <li role="presentation"><a href="#si3000_v6" role="tab" data-toggle="tab">SI3000 V6</a></li>
                 <li role="presentation"><a href="#si3000_v5" role="tab" data-toggle="tab">SI3000 V5</a></li>
                 <li role="presentation"><a href="#si3000_mn" role="tab" data-toggle="tab">SI3000 MN</a></li>
-                <li class="active" role="presentation"><a href="utility.html" role="tab" data-toggle="tab">Утилиты</a></li>
+                <li ><a href="#utility" role="tab" data-toggle="tab">Утилиты</a></li>
             </ul>
         </div>
       </div>
@@ -16,10 +16,6 @@
         <div class="row">
          <div class="col-md-2">
             <div class="container">
-            {% block leftmenu %}
-            <!--
-            
-                
                     <div class="tab-content">
                         <div role="tabpanel" id="si3000_v6" class="tab-pane active">
                             <ul class="nav of nav-stacked" id="navigation1">
@@ -45,6 +41,8 @@
                         </div>
                         <div role="tabpanel" id="si3000_mn" class="tab-pane">
                             <ul class="nav of nav-stacked" id="navigation">
+                                {% include "iskratel/si3000_mn.html" %}
+                                <!-- 
                                 <li><a class="pane" href="#">MN_V5</a>
                                     <ul class="nav of nav-stacked">
                                         <li><a class="pane" href="#">Сбор информации с MNV5</a></li>
@@ -73,54 +71,25 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </div> -->
-                        
-                        <!-- 
+                                    -->
+                        </div> 
                         <div role="tabpanel" id="utility" class="tab-pane">
                             <ul class="nav of nav-stacked">
-                                <li><a class="pane" href="callerid.html">Дешифратор CallerID в протоколе MEGACO & H248</a></li>
-                                <li><a class="pane" href="#">2</a></li>
-                                <li><a class="pane" href="#">3</a></li>
-                                <li><a class="pane" href="#">4</a></li>
-                                <li><a class="pane" href="#">5</a></li>
-                                <li><a class="pane" href="#">6</a></li>
-                                <li><a class="pane" href="#">7</a></li>
-                                <li><a class="pane" href="#">8</a></li>
-                                <li><a class="pane" href="#">9</a></li>
-                                <li><a class="pane" href="#">10</a></li>
-                                <li><a class="pane" href="#">11</a></li>
-                                <li><a class="pane" href="#">12</a></li>
-                                <li><a class="pane" href="#">13</a></li>
-                                <li><a class="pane" href="#">14</a></li>
-                                <li><a class="pane" href="#">15</a></li>
-                                <li><a class="pane" href="#">16</a></li>
-                                <li><a class="pane" href="#">17</a></li>
-                                <li><a class="pane" href="#">18</a></li>
-                                <li><a class="pane" href="#">19</a></li>
-                                <li><a class="pane" href="#">20</a></li>
-                                <li><a class="pane" href="#">21</a></li>
-                                <li><a class="pane" href="#">22</a></li>
-                                <li><a class="pane" href="#">23</a></li>
-                                <li><a class="pane" href="#">24</a></li>
-                                <li><a class="pane" href="#">25</a></li>
+                                {% include "iskratel/utilitymenu.html" %}
                             </ul>
-                        </div>
-                           
+                        </div>                
                     </div>
                 </div>
                 <!-- end container-left -->
            <!-- </div>  -->
-            {% endblock %}
-            </div>
             </div>
             <div class="col-md-10">   
                 <div class="container">                
-                        {% block content %}
+                        {%block content %}
                         {%endblock %}  
                  </div>           
                 <!-- end container-right -->
             </div>
-           
         </div> <!-- end class row -->
     </div> <!-- end class jumbotron -->  
 {% endblock %}
