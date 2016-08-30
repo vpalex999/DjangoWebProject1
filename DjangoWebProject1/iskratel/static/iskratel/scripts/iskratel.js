@@ -13,14 +13,15 @@ var main = function() {
 
 
         // функция выделяет по клику мышки  выбранный топик (подменю в TAB) 
-        $('.tab-pane li').click(function() {
-            $this = $(this);
-            console.log($this);
-            var a = $($this > 'a .pane');
-            console.log(a);
-            $(a).removeClass('panactive');
-            $(a).addClass('panactive').blur();
-            $($this > '.submenu').fadeToggle("slow", "linear");
+        //$('.tab-pane li').click(function() {
+        //    $this = $(this);
+        //    //console.log($this);
+        //    console.log("hello!");
+        //    var a = $($this > 'a .pane');
+        //    console.log(a);
+        //    $(a).removeClass('panactive');
+        //    $(a).addClass('panactive').blur();
+        //    $($this > '.submenu').fadeToggle("slow", "linear");
             // var submenu = $this.attr('.submenu');
             // console.log(submenu);
 
@@ -29,12 +30,12 @@ var main = function() {
 
 
 
-        $("#navigation").navPlugin({
-            'itemWidth': 253,
-            'itemHeight': 'auto',
-            'navEffect': "slide",
-            'speed': 600
-        });
+        //$("#navigation").navPlugin({
+        //    'itemWidth': 253,
+        //    'itemHeight': 'auto',
+        //    'navEffect': "slide",
+        //    'speed': 600
+        //});
 
     } //end main
 

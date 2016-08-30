@@ -9,7 +9,12 @@ class IskratelView(TemplateView):
 
 class CallerID(TemplateView):
     template_name ="iskratel/callerid.html"
+    active_tab="class=\'active\'"
+
 
 class Utility(TemplateView):
     template_name ="iskratel/utility.html"
-# Create your views here.
+
+class ReadNode(TemplateView):
+    template_name ="iskratel/readnode.html"
+

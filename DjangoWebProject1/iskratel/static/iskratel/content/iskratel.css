@@ -48,6 +48,16 @@
     border-radius: 10px;
 }
 
+/* выделение строки меню при наведение мышкой */
+.jumbotron .container #navigation1 a:hover, 
+.jumbotron .container #navigation1 a:hover,
+ {
+    background-color: #6699FF;
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
 .jumbotron .container a {
     color: #000;
 }
@@ -56,7 +66,7 @@
     margin-top: 2px;
 }
 
-.jumbotron .container #navigation li .panactive,
+.jumbotron .container #navigation1 li .panactive,
 .jumbotron .container #navigation1 li .panactive {
     background-color: #0066FF;
     border-radius: 10px;
@@ -64,15 +74,9 @@
     font-weight: bold;
 }
 
-.jumbotron .container #navigation a:hover,
-.jumbotron .container #navigation1 a:hover {
-    background-color: #6699FF;
-    color: #ffffff;
-    border-radius: 10px;
-    font-weight: bold;
-}
 
-.jumbotron #navigation > li .pane,
+
+.jumbotron #navigation1 > li .pane,
 .jumbotron #navigation1 > li .pane {
     min-height: 40px;
     background-color: #F0F0F0;
