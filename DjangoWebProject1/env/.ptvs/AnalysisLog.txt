@@ -3742,3 +3742,45 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Micro
 2016-08-15T15:46:35: Analysis complete
 2016-08-15T15:46:35: Saving group "c:\users\bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\django"
 2016-08-15T15:46:38: End of group "c:\users\bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\django"
+
+2016-08-31T11:00:16: Start analysis
+2016-08-31T11:00:16: [WARNING] Library was set explicitly - skipping path detection
+2016-08-31T11:00:16: IncludeModulesFromModulePath = win32com
+2016-08-31T11:00:18: Deleting 0 files
+2016-08-31T11:00:18: astropy.CallDepth = 0
+2016-08-31T11:00:18: matplotlib.CallDepth = 3
+2016-08-31T11:00:18: pandas.CallDepth = 0
+2016-08-31T11:00:18: sympy.CallDepth = 0
+2016-08-31T11:00:18: Start group "C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd" with 13 files
+2016-08-31T11:00:18: Parsing "xlrd.biffh" ("C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd\biffh.py")
+2016-08-31T11:00:18: Parsing "xlrd.book" ("C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd\book.py")
+2016-08-31T11:00:18: Parsing "xlrd.compdoc" ("C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd\compdoc.py")
+2016-08-31T11:00:18: Parsing "xlrd.formatting" ("C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd\formatting.py")
+2016-08-31T11:00:18: Parsing "xlrd.formula" ("C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd\formula.py")
+2016-08-31T11:00:18: Parsing "xlrd.info" ("C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd\info.py")
+2016-08-31T11:00:18: Parsing "xlrd.licences" ("C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd\licences.py")
+2016-08-31T11:00:18: Parsing "xlrd.sheet" ("C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd\sheet.py")
+2016-08-31T11:00:18: Parsing "xlrd.timemachine" ("C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd\timemachine.py")
+2016-08-31T11:00:18: Parsing "xlrd.xldate" ("C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd\xldate.py")
+2016-08-31T11:00:18: Parsing "xlrd.xlsx" ("C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd\xlsx.py")
+2016-08-31T11:00:18: Parsing "xlrd" ("C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd\__init__.py")
+2016-08-31T11:00:18: Parsing "xlrd.examples.xlrdnameAPIdemo" ("C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd\examples\xlrdnameAPIdemo.py")
+2016-08-31T11:00:18: Parsing complete
+2016-08-31T11:00:18: Analyzing "xlrd.biffh"
+2016-08-31T11:00:18: Analyzing "xlrd.book"
+2016-08-31T11:00:18: Analyzing "xlrd.compdoc"
+2016-08-31T11:00:18: Analyzing "xlrd.formatting"
+2016-08-31T11:00:18: Analyzing "xlrd.formula"
+2016-08-31T11:00:18: Analyzing "xlrd.info"
+2016-08-31T11:00:18: Analyzing "xlrd.licences"
+2016-08-31T11:00:18: Analyzing "xlrd.sheet"
+2016-08-31T11:00:18: Analyzing "xlrd.timemachine"
+2016-08-31T11:00:18: Analyzing "xlrd.xldate"
+2016-08-31T11:00:18: Analyzing "xlrd.xlsx"
+2016-08-31T11:00:18: Analyzing "xlrd"
+2016-08-31T11:00:18: Analyzing "xlrd.examples.xlrdnameAPIdemo"
+2016-08-31T11:00:18: Starting analysis of 13 modules
+2016-08-31T11:00:21: Analysis complete
+2016-08-31T11:00:21: Saving group "C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd"
+2016-08-31T11:00:21: End of group "C:\Users\Bubenshchikov\documents\visual studio 2015\Projects\DjangoWebProject1\DjangoWebProject1\env\Lib\site-packages\xlrd"
+2016-08-31T11:00:22: Deleting 0 files

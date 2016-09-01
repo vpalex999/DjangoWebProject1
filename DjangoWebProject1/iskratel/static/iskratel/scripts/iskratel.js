@@ -1,5 +1,15 @@
 var main = function() {
 
+    //$('.tab-pane li a').click
+    //    (function () {
+    //                    //$this = $(this);
+    //                    //var a = $($this > 'a');
+    //                    $('a').removeClass('selected');
+    //                    $(this).addClass('selected');          
+    //                 }
+    //    ); //end click tabpanel li 
+
+
         /*  var showTab = function(tab) {
                 console.log("showTab");
                 $('.pane').hide();
@@ -25,7 +35,7 @@ var main = function() {
             // var submenu = $this.attr('.submenu');
             // console.log(submenu);
 
-        }); //end click tabpanel a
+       // }); //end click tabpanel a
 
 
 

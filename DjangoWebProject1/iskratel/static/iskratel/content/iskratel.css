@@ -48,15 +48,24 @@
     border-radius: 10px;
 }
 
-/* выделение строки меню при наведение мышкой */
-.jumbotron .container #navigation1 a:hover, 
-.jumbotron .container #navigation1 a:hover,
+/* выделение строки меню при наведение мышкой */ 
+.jumbotron .container #navigation a:hover
  {
     background-color: #6699FF;
     color: #ffffff;
     border-radius: 10px;
     font-weight: bold;
 }
+
+/* добавляет к выбранному тегу класс selected, отмечающий выбранный топик(меню) */
+.jumbotron .container .selected
+ {
+    background-color: #6699FF;
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
 
 .jumbotron .container a {
     color: #000;

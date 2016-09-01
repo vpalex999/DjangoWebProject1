@@ -1,5 +1,6 @@
-﻿{% block utilitymenu %}   
-                                <li><a class="pane" href="callerid.html">Дешифратор CallerID в протоколе MEGACO & H248</a></li>
-                                <li><a class="pane" href="readnode.html#">ReadNode - парсинг экспорта</a></li>
+﻿
+{% block utilitymenu %}   
+                                <li><a class="pane {% block callerid %}{% endblock %}" href="callerid.html">Дешифратор CallerID в протоколе MEGACO & H248</a></li>
+                                <li><a class="pane {% block readnode %}{% endblock %}" href="readnode.html">ReadNode - парсинг экспорта</a></li>
                                 
 {% endblock %}
