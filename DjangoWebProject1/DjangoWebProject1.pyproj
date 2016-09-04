@@ -38,14 +38,6 @@
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
-    <Compile Include="callerid\admin.py" />
-    <Compile Include="callerid\apps.py" />
-    <Compile Include="callerid\migrations\__init__.py" />
-    <Compile Include="callerid\models.py" />
-    <Compile Include="callerid\tests.py" />
-    <Compile Include="callerid\urls.py" />
-    <Compile Include="callerid\views.py" />
-    <Compile Include="callerid\__init__.py" />
     <Compile Include="iskratel\admin.py" />
     <Compile Include="iskratel\apps.py" />
     <Compile Include="iskratel\migrations\__init__.py" />
@@ -72,15 +64,6 @@
     <Folder Include="app\static\app\scripts\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
-    <Folder Include="callerid\" />
-    <Folder Include="callerid\migrations\" />
-    <Folder Include="callerid\static\" />
-    <Folder Include="callerid\static\callerid\" />
-    <Folder Include="callerid\static\callerid\content\" />
-    <Folder Include="callerid\static\callerid\fonts\" />
-    <Folder Include="callerid\static\callerid\scripts\" />
-    <Folder Include="callerid\templates\" />
-    <Folder Include="callerid\templates\callerid\" />
     <Folder Include="DjangoWebProject1\" />
     <Folder Include="DjangoWebProject1\static\" />
     <Folder Include="DjangoWebProject1\static\content\" />
@@ -97,14 +80,6 @@
     <Folder Include="iskratel\templates\iskratel\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="callerid\static\callerid\content\bootstrap.css" />
-    <Content Include="callerid\static\callerid\content\callerid_style.css" />
-    <Content Include="callerid\static\callerid\fonts\CallerID_pcap.png" />
-    <Content Include="callerid\static\callerid\scripts\bootstrap.js" />
-    <Content Include="callerid\static\callerid\scripts\callerid.js" />
-    <Content Include="callerid\static\callerid\scripts\jquery-2.2.0.js" />
-    <Content Include="callerid\templates\callerid\callerid.html" />
-    <Content Include="callerid\templates\callerid\index.html.orig" />
     <Content Include="iskratel\static\iskratel\content\bootstrap.css" />
     <Content Include="iskratel\static\iskratel\content\bootstrap.css.map" />
     <Content Include="iskratel\static\iskratel\content\callerid_style.css" />
