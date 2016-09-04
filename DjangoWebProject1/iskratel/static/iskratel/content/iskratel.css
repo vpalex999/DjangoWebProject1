@@ -57,10 +57,11 @@
     font-weight: bold;
 }
 
-/* добавляет к выбранному тегу класс selected, отмечающий выбранный топик(меню) */
+ /*добавляет к выбранному тегу класс selected, отмечающий выбранный топик 
+   Оранжевым цветом (меню) */
 .jumbotron .container .selected
  {
-    background-color: #6699FF;
+    background-color: #EC971F;
     color: #ffffff;
     border-radius: 10px;
     font-weight: bold;
@@ -75,22 +76,22 @@
     margin-top: 2px;
 }
 
-.jumbotron .container #navigation1 li .panactive,
+/*.jumbotron .container #navigation1 li .panactive,
 .jumbotron .container #navigation1 li .panactive {
     background-color: #0066FF;
     border-radius: 10px;
     color: #fff;
     font-weight: bold;
-}
+}*/
 
 
 
-.jumbotron #navigation1 > li .pane,
+/*.jumbotron #navigation1 > li .pane,
 .jumbotron #navigation1 > li .pane {
     min-height: 40px;
     background-color: #F0F0F0;
     border-radius: 10px;
-}
+}*/
 
 
 /* скрывает побменю */
