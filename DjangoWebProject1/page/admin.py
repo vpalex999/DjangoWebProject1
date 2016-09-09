@@ -1,5 +1,5 @@
 from django.contrib import admin
-from page.models import Category, Good
+from Page.models import Category
 
 admin.site.register(Category)
-admin.site.register(Good)
+#admin.site.register(Good)

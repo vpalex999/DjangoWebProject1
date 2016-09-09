@@ -1,3 +1,5 @@
 from django.contrib import admin
+from iskratel.models import bookmarks, bookmarksubmenu
 
-# Register your models here.
+admin.site.register(bookmarks)
+admin.site.register(bookmarksubmenu)

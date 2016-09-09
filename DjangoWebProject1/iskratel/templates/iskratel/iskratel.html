@@ -1,61 +1,82 @@
 ﻿{% extends "iskratel/baseiskratel.html" %}
 {% block header %}
-    <div class="header">
-        <div class="container">
-            <ul id="mytab" class="nav nav-tabs navbar-fixed-top" role="tablist">
-                <li  {% block si3000_v6active %}{% endblock %}role="presentation"><a href="#si3000_v6" role="tab" data-toggle="tab">SI3000 V6</a></li>
-                <li  {% block si3000_v5active %}{% endblock %}role="presentation"><a href="#si3000_v5" role="tab" data-toggle="tab">SI3000 V5</a></li>
-                <li  {% block si3000_mnactive %}{% endblock %}role="presentation"><a href="#si3000_mn" role="tab" data-toggle="tab">SI3000 MN</a></li>
-                <li  {% block utilityactive %}{% endblock %} role="presentation"><a href="#utility" role="tab" data-toggle="tab">Утилиты</a></li>
-            </ul>
-        </div>
-      </div>
+<div class="header">
+    <div class="container">
+        <ul id="mytab" class="nav nav-tabs navbar-fixed-top" role="tablist">
+            <!--
+            <li  {% block si3000_v6active %}{% endblock %}role="presentation"><a href="#si3000_v6" role="tab" data-toggle="tab">SI3000 V6</a></li>
+            <li  {% block si3000_v5active %}{% endblock %}role="presentation"><a href="#si3000_v5" role="tab" data-toggle="tab">SI3000 V5</a></li>
+            <li  {% block si3000_mnactive %}{% endblock %}role="presentation"><a href="#si3000_mn" role="tab" data-toggle="tab">SI3000 MN</a></li>
+            <li  {% block utilityactive %}{% endblock %} role="presentation"><a href="#utility" role="tab" data-toggle="tab">Утилиты</a></li>
+            -->
+            {% for tab in nametab %}
+            <li role="presentation"><a href="#{{tab.nametab}}" role="tab" data-toggle="tab">{{tab.nametab}}</a></li>
+            {% endfor %}
+
+        </ul>
+    </div>
+</div>
 {% endblock %}
 {% block page %}
-    <div class="jumbotron">
-        <div class="row">
-         <div class="col-md-2">
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-2">
             <div class="container">
-                    <div class="tab-content">
-                        <div role="tabpanel" id="si3000_v6" class="tab-pane {% block si3000_v6tabact %}{% endblock %}">
-                            <ul class="nav of nav-stacked" id="navigation1">
-                                {% include "iskratel/si3000_V6menu.html" %}
-                            </ul>
-                        </div>
-                        <div role="tabpanel" id="si3000_v5" class="tab-pane {% block si3000_v5tabact %}{% endblock %}">
-                            <ul class="nav of nav-stacked">
-                              {% include "iskratel/si3000_V5menu.html" %}  
-                            </ul>
-                        </div>
-                        <div role="tabpanel" id="si3000_mn" class="tab-pane {% block si3000_mntabact %}{% endblock %}">
-                            <ul class="nav of nav-stacked" id="navigation">
-                                {% include "iskratel/si3000_mnmenu.html" %}
-                            </ul>
-                        </div> 
-                        <div role="tabpanel" id="utility" class="tab-pane {% block utilitytabact %}{% endblock %}  ">
-                            <ul class="nav of nav-stacked" id="navigation"  >
-                               <!-- {% include "iskratel/utilitymenu.html" %} -->
-                                <li><a class="pane {% block callerid %}{% endblock %}" href="callerid.html">Дешифратор CallerID в протоколе MEGACO & H248</a></li>
-                                <li><a class="pane {% block readnode %}{% endblock %}" href="readnode.html">ReadNode - парсинг экспорта</a></li>
-                             </ul>
-                        </div>                
+                <div class="tab-content">
+                    <!--
+                    <div role="tabpanel" id="si3000_v6" class="tab-pane {% block si3000_v6tabact %}{% endblock %}">
+                        <ul class="nav of nav-stacked" id="navigation1">
+                            {% include "iskratel/si3000_V6menu.html" %}
+                        </ul>
                     </div>
+                    <div role="tabpanel" id="si3000_v5" class="tab-pane {% block si3000_v5tabact %}{% endblock %}">
+                        <ul class="nav of nav-stacked">
+                            {% include "iskratel/si3000_V5menu.html" %}
+                        </ul>
+                    </div>
+                    <div role="tabpanel" id="si3000_mn" class="tab-pane {% block si3000_mntabact %}{% endblock %}">
+                        <ul class="nav of nav-stacked" id="navigation">
+                            {% include "iskratel/si3000_mnmenu.html" %}
+                        </ul>
+                    </div>
+                    <div role="tabpanel" id="utility" class="tab-pane {% block utilitytabact %}{% endblock %}  ">
+                        <ul class="nav of nav-stacked" id="navigation">
+                            <!-- {% include "iskratel/utilitymenu.html" %} -->
+                    <!--
+                            <li><a class="pane {% block callerid %}{% endblock %}" href="callerid.html">Дешифратор CallerID в протоколе MEGACO & H248</a></li>
+                            <li><a class="pane {% block readnode %}{% endblock %}" href="readnode.html">ReadNode - парсинг экспорта</a></li>
+                        
+                        </ul>
+                       
+                    </div>
+                    -->
+                    {% for tab in nametab %}
+                        <div role="tabpanel" id="{{tab.nametab}}" class="tab-pane">
+                        <ul class="nav of nav-stacked" id="navigation">
+                            <li><a class="pane" href="callerid.html">Дешифратор CallerID в протоколе MEGACO & H248</a></li>
+                            <li><a class="pane" href="readnode.html">ReadNode - парсинг экспорта</a></li>                      
+                        </ul>                     
+                    </div>
+                    {% endfor %}
+
+
                 </div>
-                <!-- end container-left -->
-           <!-- </div>  -->
             </div>
-            <div class="col-md-10">   
-                <div class="container">                
-                        {%block content %}
-                        {%endblock %}  
-                 </div>           
-                <!-- end container-right -->
+            <!-- end container-left -->
+            <!-- </div>  -->
+        </div>
+        <div class="col-md-10">
+            <div class="container">
+                {%block content %}
+                {%endblock %}
             </div>
-        </div> <!-- end class row -->
-    </div> <!-- end class jumbotron -->  
+            <!-- end container-right -->
+        </div>
+    </div> <!-- end class row -->
+</div> <!-- end class jumbotron -->
 {% endblock %}
 {% block footer %}
-    <div class="footer">
-        <div class="container"></div>
-    </div>
+<div class="footer">
+    <div class="container"></div>
+</div>
 {% endblock %}
