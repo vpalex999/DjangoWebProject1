@@ -89,6 +89,8 @@
     <Folder Include="Page\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="db.sqlite3" />
+    <Content Include="DjangoWebProject1\db.sqlite31" />
     <Content Include="iskratel\static\iskratel\content\bootstrap.css" />
     <Content Include="iskratel\static\iskratel\content\bootstrap.css.map" />
     <Content Include="iskratel\static\iskratel\content\callerid_style.css" />
@@ -119,7 +121,6 @@
     <Content Include="iskratel\templates\iskratel\utilitymenu.html" />
     <Content Include="Page\templates\index.html" />
     <Content Include="requirements.txt" />
-    <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
     <Content Include="app\static\app\content\bootstrap.min.css" />
     <Content Include="app\static\app\content\site.css" />
