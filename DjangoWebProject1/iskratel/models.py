@@ -27,5 +27,6 @@ class bookmarksubmenu(models.Model):
     # отображение в административном сайте:
     class Meta:
         ordering = ["nametabsubmenu"]  # сортировка по полю id
+        unique_together = ("namesub", "nametabsubmenu") # уникальность поля - не может быть один топик в разных разделах
         verbose_name = "Топики подменю" # Топики подменю
         verbose_name_plural = "Подменю" # имя таблицы
