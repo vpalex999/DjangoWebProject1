@@ -1,9 +1,25 @@
-<html>
-<head><title></title></head>
+{% extends 'base.html' %}
 
-<body>
-
-{{ content }}
-
-</body>
+{% block title %} {{ category.name }}::Всё для уборки {% endblock %}
+{% block main %} 
+        <div id="main">
+            <h2>{{ category.name }}</h2>
+            <table>
+                <tr>
+                    <th>Название</th>
+                    <th>Есть в наличии</th>
+                </tr>
+                {% for good in goods %}
+                    <tr>
+                        <td><a href="{% url 'good' good_id=good.id %}">{{ good.name }}</a></td>
+                        <td class="centered" >{% if good.in_stock %}+{% endif %}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+{% endblock %}
+        <div id="footer">
+            <p>Все права принадлежат разработчикам сайта</p>
+        </div>
+    </body>
 </html>

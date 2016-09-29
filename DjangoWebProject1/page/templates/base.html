@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static 'page/main.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <h1>Всё для уборки</h1>
+        </div>
+        <div id="leftmenu">
+            <ul>
+                {% for cat in cats %}
+                    <li><a href="{% url 'index' cat_id=cat.id %}">{{cat.name}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div id="main">
+            {% block main %}
+            {% endblock %}
+        </div>
+        <div id="footer">
+            <p>Все права принадлежат разработчикам сайта</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+       {{ good.name }}:: {{ good.category.name }}
+{% endblock %}
+{% block main %}
+        <div id="main">
+            <h2>{{ good.name }}</h2>
+            <p class="category" >Категория: {{ good.category.name }}</p>
+            <p>{{ good.descripton|linebreaksbr }}</p>
+            <p>{% if not good.in_stock %}Нет в наличии{% endif %}</p>
+            <p class="not-in-stock"><a href="{% url 'index' cat_id=good.category.id %}">Назад</a></p>
+{% endblock %}
+        <div id="footer">
+            <p>Все права принадлежат разработчикам сайта</p>
+        </div>
+        </div>
+    </body>
+</html>

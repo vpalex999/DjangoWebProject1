@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>{{ good.name }}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>{{ good.name }}</h1>
+        <p>Категория: {{ good.category.name }} </p>
+        <p>{{ good.description|linebreaksbr }}</p>
+        <p>{% if not good.in_stock %}Нет в наличии {% endif %}</p>
+        <p><a href="/goods/{{ good.category.id}}/">Назад</a></p>
+    </body>
+</html>
