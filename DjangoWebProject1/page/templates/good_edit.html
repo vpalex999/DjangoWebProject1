@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Правка :: {{ good.name }} :: {{ good.category.name }}{% endblock %}
+{% block main %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" name="Сохранить" >
+</form>
+<p><a href="{% url 'index' cat_id=good.category.id %}"></a></p>
+{% endblock %}
